@@ -1,0 +1,44 @@
+.skeleton {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.placeholder-item {
+  box-shadow: 0 4px 10px 0 rgba(33, 33, 33, 0.15);
+  border-radius: 4px;
+  width: 300px;
+  height: 450px;
+  background-color: #d1cbcb;
+  position: relative;
+  overflow: hidden;
+}
+
+.placeholder-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -150px;
+  top: 0;
+  height: 100%;
+  width: 150px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    #e8e8e8 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: load 1s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes load {
+  from {
+    left: -150px;
+  }
+  to {
+    left: 100%;
+  }
+}

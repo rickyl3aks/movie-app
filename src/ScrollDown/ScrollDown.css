@@ -1,0 +1,37 @@
+.btn {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  text-align: center;
+  width: 4em;
+  z-index: 1;
+  height: 4em;
+  border: 0.5em solid #333;
+  border-radius: 50%;
+  box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.7);
+  background: rgba(223, 220, 220, 0.3);
+  backdrop-filter: blur(3px);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  margin-top: 0.8rem;
+  width: 1.4em;
+  height: 1.4em;
+  border-top: 0.5em solid #333;
+  border-right: 0.5em solid #333;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.btn:hover {
+  cursor: pointer;
+  border: 0.5rem solid #c42a2a;
+}
+
+.btn:hover::after {
+  border-top: 0.5rem solid #c42a2a;
+  border-right: 0.5rem solid #c42a2a;
+}

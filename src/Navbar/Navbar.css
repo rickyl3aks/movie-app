@@ -1,0 +1,67 @@
+/* header */
+header {
+  background-color: rgb(34, 80, 80);
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 30%;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.search {
+  font-family: "Roboto";
+  font-size: clamp(0.7rem, 2vw, 1.5rem);
+  outline: none;
+  border: 2px solid rgb(114, 155, 155);
+  border-radius: 50px;
+  background-color: transparent;
+  padding: 0.5rem 1.5rem;
+}
+
+/* btn */
+.btn-container {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.btn-container > button {
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn-container:hover > .not-allowed {
+  cursor: not-allowed;
+}
+
+.btn-container > button:hover {
+  cursor: pointer;
+  background-color: rgb(212, 206, 206);
+}
+
+.btn-container > .relative {
+  border-radius: 5px;
+  height: 35px;
+  width: 50px;
+  border: 2px solid black;
+  position: relative;
+}
+
+.relative > h4 {
+  position: absolute;
+  font-weight: normal;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
