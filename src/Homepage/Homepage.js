@@ -1,4 +1,6 @@
 import React from "react";
+//import movie image if there is no available in API
+import movieIMG from "../img/movie.jpg";
 import "./Homepage.css";
 
 const Homepage = ({ movies, url }) => {
@@ -9,7 +11,7 @@ const Homepage = ({ movies, url }) => {
         return (
           <div className="container" key={id}>
             <img
-              src={poster_path != null ? url + poster_path : "/img/movie.jpg"}
+              src={poster_path != null ? url + poster_path : movieIMG}
               alt={title}
             />
             <h1>{title}</h1>

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+//import movie DB logo
+import logo from "../img/logo.svg";
 import "./Navbar.css";
 
 //links
@@ -62,12 +64,7 @@ const Navbar = ({ movies, API_URL }) => {
   return (
     <div>
       <header>
-        <img
-          src="/img/logo.svg"
-          className="logo"
-          alt="logo"
-          onClick={firstPage}
-        />
+        <img src={logo} className="logo" alt="logo" onClick={firstPage} />
         <form onSubmit={handleOnSubmit}>
           <input
             type="text"
