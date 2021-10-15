@@ -10,6 +10,7 @@ header {
 
 .logo {
   max-width: 30%;
+  margin: 0px;
 }
 
 .logo:hover {
@@ -38,6 +39,7 @@ header {
   width: 100px;
   height: 35px;
   border-radius: 5px;
+  background-color: rgb(235, 230, 230);
   border: none;
 }
 

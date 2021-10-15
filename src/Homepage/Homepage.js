@@ -10,11 +10,11 @@ const Homepage = ({ movies, url }) => {
         const { title, poster_path, vote_average, overview, id } = movie;
         return (
           <div className="container" key={id}>
+            <h1>{title}</h1>
             <img
               src={poster_path != null ? url + poster_path : movieIMG}
               alt={title}
             />
-            <h1>{title}</h1>
             <div className="vote">
               {vote_average % 1 === 0 ? vote_average + ".0" : vote_average}
             </div>
